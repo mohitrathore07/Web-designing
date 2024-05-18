@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Flexbox</title>
+    <style>
+        .container {
+            border: 2px solid red;
+            height: 80vh;
+            /* display: flex; */
+            /* justify-content: center; main axis center */
+            /* align-items: center; cross axis center  */
+            /* justify-content: flex-end; at the end of the fiex */
+            /* justify-content: flex-start; at the start
+            + */
+            /* justify-content: space-between;  except around spaces between*/
+            /* justify-content: space-around; around spaces */
+            /* justify-content: space-evenly;  /*even spaces around & between  */
+            /* flex-direction: column;  lay down columns me default row hota hai */ 
+            /* flex-direction: column-reverse; /*column wise with reverse order  */
+            /* flex-direction: row-reverse; reverse order with rows */
+         /*
+            flex-direction: row;
+            justify-content: center; /*now iski main exis y hai main exis ke basis pe center karega naki horizontal vertical row hai to main axis horizontal x hogi column hai tp vertical columnn hogi   */
+            display: flex;
+            /* align-items: center; */
+            /* flex-wrap:wrap ; wrap according to its width  */
+            /* align-content:center; mulitple content hai to align content use karna hai or single line content hai to align-items  */
+            /* flex-wrap:wrap-reverse ;  reverse order wrapping */
+            /* flex-wrap:wrap;  */
+            align-content: center;
+            /* flex-flow: column wrap-reverse; 1st direction 2nd wrap order */
+            /* flex-flow: row row-reverse; */
+            gap: 30px; /*boxes ke bich ka gap x and y both side */
+            /* row-gap: 14px; */
+            /* column-gap: 20px; */ 
+            /*row and column ka shortend  */
+            /* gap: 20px 40px; */
+       }
+        .item {
+            height: 32px;
+            width: 32px;
+            border: 2px solid black;
+            margin: 4px;
+            background-color: blueviolet;
+            /* flex-grow: 1; default zero hota hai 1 karke hmne bola ki sare item equal width lete hue equal space lenge */
+        }
+        .order-1 {
+            /*default order zero hota hai */
+            order: 1; /*jitna kam order utne start me or jitna jyda order utne end me jayega */
+        }
+        .item-1 {
+            /* flex-grow: 10;ye sabse 10 multiple space lega */
+            /* flex-shrink: 2; ability of a flex item to shrink if necessary  2 means 2x se shrink */
+            align-self: center;/*is perticular item ko align karne ke liye */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item-1">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item order-1">4</div>
+        <div class="item order-2">5</div>
+        <div class="item order-3">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+      <!--  <div class="item">10</div>
+        <div class="item">1</div>
+            <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item">10</div>
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item">10</div> -->
+    </div>
+</body>
+</html>

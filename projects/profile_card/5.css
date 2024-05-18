@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: rgb(59, 200, 177);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: white;
+    max-width: 380px;
+    width: 100%;
+    border: 0px 0px 0px 0.1;
+    border-radius: 15px;
+}
+.container .head {
+    background-color: rgb(26, 170, 146);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px 15px 0px 0px;
+    
+}
+.head h3 {
+    color: white;
+    font-size: 1.8em;
+
+}
+.inp {
+    display: flex;
+    flex-direction: column;
+    margin: 7% 7%;
+    margin-bottom: 0;
+    gap: 12px;
+}
+.inp input {
+    padding: 10px;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 3px;
+    color: rgb(204, 204, 204) ;
+}
+.container .inp a {
+    text-decoration: none;
+    color:rgb(26, 170, 146) ;
+    font-weight: 545;
+    transition: all 0.2s ease;
+}
+
+.container .inp a:hover {
+    color:rgb(11, 147, 124) ;
+}
+
+.container .btn {
+    padding: 10px 145px; 
+    background-color: rgb(26, 170, 146);
+    color: white;
+    margin: 7%;
+    border: none;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.container .btn:hover {
+    background-color: rgb(18, 147, 126);
+
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.content span {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.content span a {
+    text-decoration: none;
+    color: rgb(26, 170, 146);
+    transition: all 0.3s ease;
+
+
+}
+
+.content span a:hover {
+    color: rgb(18, 147, 126);
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Selectors</title>
+    <style>
+        /* .box:first-child {
+             background-color: red; 
+        } 
+        .box::first-line { /*only first line me changes 
+            background-color: aqua;
+        } */ 
+        /*
+        .boxes {
+            color: blue;
+            border: 2px solid black;
+        }
+        [data-color="primary"] {  /*if data color is primary then apply this 
+            padding-top: 45px;
+        }  */
+        /*p,a,div, [data-color="primary"] { all p,div,a, [data-color="primary"] me ek sath  
+            padding-top: 45px;
+        } 
+        .box:nth-child(even) { /*even me prop apply 
+            background-color: rebeccapurple;   
+        }
+        
+        .box:nth-last-child(odd) {
+            background-color: red;
+        }
+        
+        .boxes::before { /*.boxes ke phle ye content add kar dega  
+            content: "harry is a programer";
+        }
+        .boxes::after { /*.boxes ke phle ye content add kar dega  
+            content: "harry is a programer";
+            color: red;
+            background-color: #000;
+        }
+        
+        ::selection { /*on selecting everything .boxes::selecting on selecting .boxes content selecting means selecting to copy or etc 
+            color: aqua;
+            background-color: antiquewhite;
+        }
+        */ 
+        .box::first-letter { /*first letter of box content */
+            color: red;
+            font-size: 45px;
+        }
+        input::placeholder { /*placeholders pe prop apply */
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">i am first box</div>
+        <!-- <div class="box">hey i am a box Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates tempora, placeat iusto alias vero quas non vel veritatis, unde assumenda sapiente debitis quam aperiam doloribus soluta eveniet nesciunt, voluptate facilis?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis repellendus temporibus qui reiciendis officiis, sunt harum, aperiam quam doloremque veniam accusantium labore unde exercitationem, tenetur fugit ad quae? Facere, eveniet.</div> -->
+        <div class="box">hey i am a box</div>
+        <div class="box">hey i am a box</div>
+        <input type="text" placeholder="type here">
+    </div>
+</body>
+</html>

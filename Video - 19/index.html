@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonts nd Colors</title>
+    <!-- 2nd way to add fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&display=swap" rel="stylesheet">
+    <style>
+        /* @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&display=swap'); */
+        /* 1 way to add fonts if export method embad hai to ye */
+
+        p {
+            font-family: "Baloo Bhaijaan 2", sans-serif;
+            /* font-family: 'Courier New', Courier, monospace; */
+            /*jo font availible hai */
+            /* font-style: italic; */
+            /*itallic me */
+            font-weight: bold;  /*deepen color */
+            text-decoration: underline;
+            /*underline krne ke loiye */
+            /* line-height: 5; upar ki line/ text se space increase karne ke liye  */
+
+        }
+
+        h1 {
+            font-family: cursive;
+            font-size: 20px; /*increase font size */
+            font-weight: bold;
+            /* letter-spacing: 5px; letters ke bich me space create karne ke liye  */
+        }
+        h2 {
+            text-transform: capitalize; /*every word ka first letter will get capitalize */
+            /* text-transform: lowercase; every word ka first letter will get lower */
+            text-decoration: underline;
+            text-decoration-color: red; /*line with red color */ 
+            /* text-decoration-style: dotted; dotted underline  */
+            text-decoration-thickness:5px;
+            /* text-indent: 45px; left se dur bhagane ke liye  */
+            text-align: center; /*vertically center karna ho to */
+        } 
+        .lorem {
+            border: 2px solid red;
+            width: 140px;
+            /* overflow: hidden; /*if overflow ho rha to wo hidden ho jayega 
+            text-overflow: ellipsis; /*overflow types hai   */
+            /* word-break: break-all; word will break at the end of the line */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Fonts</h1>
+    <p>this is a font paragraph</p>
+    <h2>about fonts</h2>
+    <p class="lorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima nobis modi in recusandae at culpa corrupti, reiciendis libero delectus eveniet quisquam mollitia nisi architecto voluptatum natus est ducimus amet nemo.</p>
+</body>
+
+</html>

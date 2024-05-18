@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css float and Clear</title>
+    <style>
+        .cards {
+            border: 2px solid black;
+            display: flow-root;  /*container ke within element ko fit karne ke liye  */
+        }
+        img {
+            /* float: left; this will float left and allow content to be at the right of it's */
+            float: right;
+        }
+        .card {
+            border: 2px solid red;
+        }
+        .card:nth-child(2) {
+            clear: right; /*iske right me koi bhi element nhi hoga */ 
+            /* clear: left; /*left me allow nhi 
+            clear: both; both me allow nhi */
+        }
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <img src="https://st.depositphotos.com/1019399/5107/i/450/depositphotos_51078711-stock-photo-sport-fishing-boat.jpg" alt="boat img" width="400">
+        <div class="card">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam exercitationem laborum, nam, tempora cum provident deleniti tempore esse voluptatibus placeat assumenda vero omnis labore voluptate? Harum aspernatur eum, id illo laborum quis architecto a!</p>
+        </div>
+        <div class="card">card 2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, accusamus iure harum modi, obcaecati id exercitationem quaerat unde dolorum est in laborum consectetur officia perferendis nisi numquam voluptatum maiores at expedita qui Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus deleniti repudiandae, quod iure nesciunt necessitatibus maxime similique. Quidem, ad deleniti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, non? Numquam, saepe! Corrupti, sed aperiam?</div>
+        <div class="card">card 3</div>
+    </div>
+</body>
+</html>

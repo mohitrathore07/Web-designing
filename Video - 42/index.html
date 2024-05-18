@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Transform</title>
+    <style> 
+         * {
+            margin: 0;
+            padding: 0;
+         }
+        .box {
+            height: 50px;
+            width: 50px;
+            background-color: beige;
+            border: 2px solid black;
+            /* transform: rotate(45deg); it will rotate 45 degree on its position */
+            /* transform: rotate(0.25turn); */
+            /* transform: rotateX(40deg); X axis ke about rotate  */
+            /* transform: rotateY(45deg); Y axis ke about rotate  */
+              /* transform: rotateZ(45deg);  Y axis ke about rotate  */
+              /* transform: scale(0.5); itne times bada */
+              /* transform: scaleX(0.5); itne times bada only X axis me*/
+            /* transform: skew(10deg); teda krne ke liye skew z axis me nhi hota h */
+            /* transform: translateX(344%); X axis side move */
+            /* transform: translateY(344%); X axis side move */
+            transform: translateX(344%) skewX(40deg) translateY(244%); /*it can be  negative */
+
+            /* display: flex;
+            justify-content: center;
+            align-items: center;  */
+        }
+        .container {
+            width: 100vw;
+            height: 80vh;
+            border: 2px solid purple;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+box
+        </div>
+    </div>
+</body>
+</html>

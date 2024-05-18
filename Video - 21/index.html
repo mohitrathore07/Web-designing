@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            color: aqua;
+        }
+        .fir {
+            color: blue !important; /*important used to give importance it will have a highest precedency order*/ 
+        }
+        .sec {
+            color: plum ;
+        }
+        .thir {
+            color: rgb(46, 179, 179); 
+        } 
+        /*who will decide preceding order - .1. position & order  matters niche wale ko prefference 2. specificity - which css selector has the strongest much like inline wale ki internal se jyada specificity hogi inline style > id selector > class or attribute selector > element selector > universal selector   3.Origin: the order in which css appearce amd where it comes from whether that is a browser style css from a browser extension or ur authored css 4. importance: !important */
+        [data-x = a] {
+            background-color: red; /*attribute selector */
+        }
+        </style>
+</head>
+<body>
+    <h1 class="fir sec thir">this is a heading</h1>
+    <h1 class="fir sec thir" data-x="a">this is a attribute selector</h1> 
+    <!-- data-x ="a" is attribute selector-->
+</body>
+</html>
+
+<!--
+
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* The specificity of this selector is 1  */
+        h1 {
+            color: aqua;
+        }
+
+        /* The specificity of this selector is 10  */
+        .cpurple {
+            color: purple;
+        }
+
+        /* The specificity of this selector is 1 + 10 = 11  */
+        h1.yellow {
+            color: yellow;
+        }
+
+        /* This is an example of attribute selector. The specificity of this selector is 10 */
+        [data-x=a] {
+            color: maroon;
+        }
+
+        /* The specificity of this selector is 10  */
+        .cred {
+            color: red;
+        }
+
+        /* The specificity of this selector is 1 + 10 + 10 + 10 + 10 = 41  */
+        a.harryclass.rohan-class[href]:hover {
+            color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 class="yellow cred cpurple" data-x="a">CSS Specificity</h1>
+    </div>
+</body>
+
+</html>
+-->

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sizing</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        html {
+            font-size: 12px;
+        }
+        .box {
+            border: 2px solid black;
+            /* width: 2048px; */
+            /* width: 100vw; vw means view port width jitna dikh rhi screen utni puri */
+            /* height: 100vh; vw means view port height jitna dikh rhi screen utni puri */
+            width: 25vw;
+            background-color: aquamarine;
+            margin: auto; /*left right se equal = center only if block lvl  hai to inline hai to not applicable */
+            box-sizing: border-box;
+        }
+        .container {
+            /* width: 100vw; */
+            /* height: 10vh; */
+            /* background-color: rgb(26, 190, 135); */
+            /* border: 2px solid black; */
+            margin:23px auto; /* horizontal vertical separately top-bottom, left-right  */
+            box-sizing: border-box;
+            width: 100vw;
+            /* background-color: rgb(26, 190, 135); */
+            border: 2px solid black;
+        }
+        .container p{
+            /* width: 100vw; */
+            /* height: 10vh; */
+            background-color: aquamarine;
+            /* margin:23px auto; horizontal vertical separately top-bottom, left-right  */
+            box-sizing: border-box;
+            /* font-size: 1.5em; actual ka 1.5 multiple */
+            /* font-size: 2rem;  root ka multiple we have seted in html nd that is 12px for all so 12* 2 = 24px */
+            min-height: 80vh;
+            /* width: 50%; parent ka 50%*/ 
+            width: 50%; /* % only if parent ki width/hight pata ho to hi laagna otherwise ignore this  */ 
+            
+        }
+        .mycount {
+            background-color: red;
+            color:yellow;
+            width: 100vmin; /*device pe depend karta hai laptop me vmin vmax same phone me ye width hogi */
+            box-sizing: border-box;
+            /* margin: 23px auto; */
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">this is a box</div>
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga eaque quibusdam velit rerum nisi numquam dicta saepe, quas aliquam veniam ipsum assumenda veritatis maxime accusamus deleniti exercitationem adipisci dolore aperiam necessitatibus sit quam inventore. Eveniet, culpa vel, est perspiciatis mollitia laudantium magnam sit rem eum debitis doloremque quas quisquam, obcaecati sapiente hic incidunt! Ea, commodi recusandae.</p>
+    </div>
+    <div class="mycount">
+        this is my count
+    </div>
+</body>
+</html>

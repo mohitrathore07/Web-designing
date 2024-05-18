@@ -1,0 +1,9 @@
+/* . is for selecting the class */
+.red {
+    background-color: red;
+} 
+
+/* # is used to select id  */
+#new {
+    background-color: aqua;
+}

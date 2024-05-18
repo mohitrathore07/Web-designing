@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: skyblue;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+.container {
+    width: 25%;
+    height: 40%;
+    background-color: white;
+    margin: auto auto;
+    padding: 35px;
+}
+.places {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px;
+    margin: 8px 0px;
+}
+.places input {
+    margin: 6px 0px;
+    padding: 10px;
+}
+.btn {
+    width: 100%;
+    padding: 8px;
+    background-color: skyblue;
+    color: white;
+    font-weight: 100;
+    border: none;
+}

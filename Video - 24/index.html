@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Shadow & Outlines</title>
+    <style>
+        .box {
+            border: 2px solid black;
+            padding: 34px;
+            box-shadow:5px 15px 5px #8888;  /*it's a shadow - me denge to left & top */ /*h-offset v-offset blur spread color inset */
+            
+        }
+        .text-shadow {
+            text-shadow: 2px 2px 4px #b8000088; /*text shadow add */
+            outline: 2px solid black; /* outline box model ka part nhi hoti h same as box-shadow but box shadow box model ka part hoti hai */
+            outline-offset: 5px; /*lines ki distance badane ke liye */
+            border: 2px solid rgb(183, 57, 57);
+            border-radius: 5px; /*outlines me radius add nhi kar skte isme kar skte hai  */ 
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        i am a box
+    </div>
+    <p class="text-shadow">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium, atque?</p>
+</body>
+</html>

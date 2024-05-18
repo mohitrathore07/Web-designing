@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Selectors</title>
+    <style>
+        /* element selector*/ 
+        div { /* all div will be red */
+            background-color: red;
+        }
+
+        .red { /* jiski bhi class yellow hai uska background color yellow*/ 
+            background-color: yellow; 
+        }
+
+        /*id selector*/
+        #green {
+            background-color: green;
+        }
+
+        /*child selector*/
+        div > p { /*direct child */
+            background-color: violet;
+        }
+        /*descendent selector  */ 
+        div p { /* kitne bhi andar p div ke */
+            color: blue;
+            background-color: brown;
+        }
+        * { /*universal selector all select */ 
+            margin: 0;
+            padding: 0;
+        }
+        /*Psudo selector */
+        a:visited { /*after click on the link */
+            color: rgb(82, 82, 23);
+        }
+        a:link { /*all links ka color  */
+            color: red;
+        }
+        a:active { /* on click */ 
+             color: violet;
+        }
+        a:hover { /*on hovering  */
+            background-color: royalblue;
+        }
+        p:first-child { /* jaha jaha p first child hai waha wha */ 
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <main class="one">
+        <!-- <h4>this is </h4> now above pe first-child work nhi karega bcz ye first child nhi rha -->
+        <p>this is first</p>
+        <p>this is second</p>
+    </main>
+    <div>
+        i am a div
+    </div>
+    <div class="red">
+        i am a class div
+    </div>
+    <div id="green">
+        i am an id div
+    </div>
+    <div>
+        it shouldn't be inside any other tag
+        <h1>below isn't in any other tag it will work fine</h1> 
+        <p>this is a paragraph</p>
+        <article>
+            <p>this is inside </p>
+        </article>
+    </div>
+    <a href="https://www.youtube.com" target="_blank">youtube</a>
+</body>
+</html>

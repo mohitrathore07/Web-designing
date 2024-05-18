@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <h1>Form to apply</h1>
+    <form action="post">
+        <div>
+        <label for="username">Enter ur username</label>
+        <input type="text" id="username" placeholder="Enter ur username"> <!-- by default kya likha aayega box ke andar placeholder describes that-->
+    </div>
+    <div>
+        <input type="radio" id="male" name="gender" value="male"> <!-- type = radio selective type-->
+        <label for="male">Male</label>
+        <input type="radio" id="Female" name="gender" value="female">  <!-- since name same diye hai to ek option hi select hoga -->
+        <label for="Female">Female</label> <!-- iski or input ki id always same otherwise we'll not be able to select by box -->
+    </div>
+    <div>
+        <input type="checkbox" name="subscribe" id="subscribe" value="yes"> <!-- multiple select-->
+        <label for="subscribe">Subscribe to news later</label> 
+    </div>
+    <div>
+        <label for="comment">Enter ur comment</label>
+        <textarea name="comment" id="" cols="40" rows="10">
+        </textarea>
+    </div>
+    <div>
+        <select name="fruits">
+            <option value="apple">Apple</option>
+            <option value="banana">Banana</option>
+            <option value="cherry">Cherry</option>
+        </select>
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Properties</title>
+    <style>
+        /*Position - 1. Static(default) we cannot use top bottom left right 2. relative we can change its position through it's current position 3. Absolute: parent se top left right bottom condition: jiski position static na ho nearest positioned find karti hai*/
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            height: 133px;
+            width: 80vw;
+            border: 2px solid black ;
+            margin: 3px;
+            padding: 3px;
+        }
+        .box-1 {
+            background-color: aqua;
+            /* position: relative;
+            top: 20px; 
+            left: 25px; */
+            /* z-index: 4; by any chance box 1 overlap or niche aarha box - 2 ke to jiski z-index jyada wo upar dikhega that't it */
+            /* position: sticky; upar chipak jayega even page scrolling it will be on top and will go down with scrolling the page 
+            top: 0px;
+            height: 111px;
+            width: 100%;
+            margin: 0;
+            padding: 0; */
+        }
+        .box-2 {
+            background-color: rgb(8, 93, 65);
+            /* height: 1000px; */
+            /* position: relative;
+            z-index: 3; */
+            
+        }
+        .box-3 {
+            background-color: blueviolet;
+            position: absolute; /*ye parent me hai uski position static hai to wo body ko parent manega bt body bhi pos static hai now wo html ke passs jayega wo bhi static nhi hai bt uske upar kuchh hai hi nhi to wo whi set ho jayega*/
+            top: 0px;
+        }
+        .box-4 {
+            background-color:antiquewhite;
+            position: fixed;
+            left: 25px; /*iskii pos fix ho jayegi even scrolling the page sath me chalega */
+        }
+        .parent  {
+            padding: 43px;
+            margin: 34px;
+            border: 2px solid black;
+            /*position: relative; iski pos rel kari to ye ab parent ban gya */
+            /* position: absolute; we have'nt change so box-3 top 0 upar rhega */ 
+            /*Exceptions: trasform, filter, or perspective prop. can also make an element appear as positioned */
+            /* transform: translate(0); parent ke relative positioned */
+            /* filter: invert(); color bhi change automatically */
+            /*parent relative hi hoga inka ye 3 prop bhi inhe as a positioned element show kar skti hai  */
+            /* perspective: 0em; parent relative show  */
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+    <div class="box box-1"></div>
+    <div class="box box-2"></div>
+    <div class="box box-3"></div>
+    <div class="box box-4"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Animations</title>
+    <style>
+        .container {
+            background-color: rgb(9, 106, 106);
+            height: 80vh;
+            width: 30vw;
+        }
+        .box {
+            width: 34px;
+            height: 45px;
+            background-color: aqua;
+            /*
+            animation: myanimation;
+            animation-duration:3s; kitni der tk chlega 
+            animation-iteration-count: 2 ; how many times it will happen  
+            animation-timing-function: ease-in-out; start end norammly 
+            animation-delay: 3s; delay kitni der baad aayega 
+            animation-direction: reverse; reverse me chlega 
+            animation-play-state: paused; pause to pause 
+            */
+            /* animation: myanimation 3s ease-in-out 2s 5 forwards; chlke forward me rukkhega backword hai  */
+            /* animation: second 3s ease-in-out 2s 2 ; */
+            animation: myanimation 3s ease-in-out 2s 2,
+                       second 3s ease-in-out 10s 1 ;
+        }
+
+        @keyframes myanimation {
+            from {
+                background-color: red;
+            }
+            to {
+                transform: translateX(300px);
+                background-color: yellow;
+            }
+        }
+        /*multiple animations create kr skte hai  */
+        @keyframes second {
+            0% {
+                transform: rotate(100deg);
+            }
+            25% {
+                transform: rotate(200deg);
+            }
+            50% {
+                transform: rotate(300deg);
+            }
+            100% {
+                transform: rotate(400deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            box
+        </div>
+    </div>
+</body>
+</html>

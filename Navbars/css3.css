@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}
+nav .logo {
+    margin-left: 25px;
+}
+.logo img {
+    width: 30px;
+    border-radius: 15px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding-right:15px;
+    margin: 12px;
+}
+nav ul li {
+    color: white;
+}
+nav ul li:hover {
+    border-bottom: 2px solid cyan;
+}

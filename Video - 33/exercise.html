@@ -1,0 +1,50 @@
+<!-- create a navbar using var colors-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excerise - 4</title>
+    <style>
+        :root {
+            --color:rgb(32, 226, 226);
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .nav ul {
+            list-style: none;
+            background-color: var(--color);
+            border-radius: 7px;
+            overflow: hidden;
+        }
+        .nav ul li  {
+            /* display: inline;
+            padding: 12px 50px;
+            box-sizing: border-box;
+            background-color: var(--color);
+            border-radius: 7px;
+            text-align: center;
+            list-style: none;
+            border: 1px solid black; */
+            
+            display: inline-block;
+            padding: 12px 50px;
+            box-sizing: border-box;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Login</li>
+        </ul>
+    </div>
+</body>
+</html>

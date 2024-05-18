@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Variables</title>
+    <style> 
+    /*variables setting*/
+        :root { /* global variable creatipon*/
+            --color:pink;
+            --seccolor:rgb(208, 57, 83);
+            /*they not only can hold colors they also can hold values  */
+            --defpad: 23px;
+            --defop:0.2;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        ul {
+            display: flex;
+        }
+        ul li {
+            list-style: none;
+            /* opacity: var(--defop); */
+            /* padding: 10px; */
+            padding: var(--defpad); /*values hold  */ 
+        }
+        ul li:first-child {
+            --color:rgb(46, 149, 15); /*local variable override */
+            background-color: var(--color); /*using variables */
+            border: 2px solid var(--seccolor);
+        }
+        .nav {
+            background-color: red;
+        }
+        .container {
+            /* background-color: rgb(216, 142, 142); */
+            background-color: var(--seccolor,brown); /*by any chance color is not found so it will use brown color */
+            margin-top: 6px;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="container">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error iste dolor veritatis vitae quod, eum fugit, tempora sint dolorum, dolore odit quis fugiat non sapiente itaque nisi rem iusto quisquam! Quaerat vitae ad impedit dolor amet dicta, sint, totam error saepe dolorum vel dignissimos fugit.
+    </div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        body {
+            background-color: red;
+        }
+
+        /* 
+        @media not|only mediatype and (expressions) {
+            css - code
+        }
+        */
+        /* @media  screen and (max-width: 455px) { /*if max width is 455px background color will change   
+        body {
+         background-color: blue;
+        } */
+       /*  @media  screen and (min-width: 455px) { /*if max width is 455px background color will change   
+        body {
+         background-color: rgb(38, 38, 172);
+        } 
+    }
+    */
+    .box {
+        width: 344px;
+        height: 344px;
+        background-color: steelblue;
+        padding: 3px;
+        margin: 3px;
+    }
+    .boxes {
+        display: flex ;
+    }
+    @media screen and (max-width:455px) {
+        body {
+            background-color: blue;
+        }
+        .boxes {
+            flex-direction: column; 
+        }
+    }
+
+    @media screen and (orientation:portrait) { /*orientation:  1. landscape: width jyada height se  2. portrait: height jyada width se  */
+        body {
+            background-color: rgb(32, 99, 157);
+        }
+    }
+    </style>
+</head>
+<body>
+    <div>
+        i am a red body guy!
+    </div>
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

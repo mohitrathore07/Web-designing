@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Properties</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            border: 2px solid blue;
+            display: inline;
+            /* padding: 45px; if element inline to top se apply nhi hogi */
+            /* margin: 5px; if element inline to top se apply nhi hogi */
+            /* width: 252px; if element inline to apply nhi hogi */
+            /* Solution */ 
+            /* display: inline-block; */
+            padding: 25px;
+            margin: 25px;
+            width: 150px;
+        }
+        .box-1 {
+            /* display: none; space bhi + box dono gyb */
+            visibility: hidden; /*only box/content gyb hoga baki space rhegi same */ 
+        }
+    </style>
+</head>
+<body>
+    <div class="box box-1">
+        i am a box
+    </div>
+    <div class="box"> another box </div>
+        <span>I am a good</span>
+        <span>boy</span> 
+</body>
+</html>
