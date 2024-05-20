@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: #ade5e6;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.container {
+    width: 75%;
+    height: 450px;
+    background-color: white;
+    border-radius:5px;
+    overflow: hidden;
+}
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    padding: 60px 102px;  /* x, y */
+    gap: 40px;    
+    width: 30%;
+}
+.left-side .one i{
+    color: rgb(83, 3, 133);
+    font-size: 25px;
+    
+}
+
+.left-side .one {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+}
+
+.left-side .one span {
+    color: grey;
+}
+.left-side .ones:first-child {
+    color: black;
+}
+
+.right-side {
+    padding: 60px 102px;  /* x, y */
+    width: 100%;
+}
+.right-side .contain {
+    display: flex;
+    flex-direction: column;
+}
+
+.right-side h3 {
+    font-size: 25px;
+    color: rgb(83, 3, 133);
+}
+
+.right-side .msg {
+    margin: 5px 0px 10px 0px; 
+}
+
+.right-side .contain input {
+    margin: 5px 0px;
+    border: none;
+    background-color: rgba(107, 68, 132, 0.2);
+}
+
+.right-side .contain .ione,.itwo {
+    padding: 13px;
+    border-radius: 5px;
+}
+
+.right-side .contain .ithree {
+    border-radius: 5px;
+    display: flex;
+    padding: 40px;
+}
+
+.btn {
+    padding: 10px 25px;
+    margin-top: 15px;
+    background-color: rgb(83, 3, 133);
+    color: #fff;
+    border-radius:4px;
+}

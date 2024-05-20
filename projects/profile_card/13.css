@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items:center;
+    background-color: #f0f0f0;
+}
+
+.container {
+    width: 380px;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0,0.1);
+    border-radius: 25px;
+}
+
+.title {
+    line-height: 100px;
+    text-align: center;
+    background-color: blue;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 800;
+    border-radius: 25px 25px 0px 0px; /*top-left top-right bottom-right bottom-left */
+}
+
+form {
+    padding: 10px 15px 20px 30px;
+}
+
+form .field {
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    position: relative; 
+    
+}
+
+form  .field input {
+    height: 100%;
+    width: 100% ;
+    padding-left: 20px;
+    outline: none;
+    border: 1px solid lightgrey;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    font-size: 17px;
+}
+
+.container form .field input:focus {
+    border-color: #4058d0;
+}
+
+form .field label {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    font-size: 17px;
+    color: #999;
+    transform: translateY(-50%);
+}
+
+.container form .field input:focus ~ label,
+.container form .field input:valid ~ label{
+    top: 0%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #4158d0;
+    background-color: #fff;
+}
+
+.container form .pass-link, .content {
+    padding: 5px 10px;
+}
+.container form .pass-link a,.content .last a {
+    text-decoration: none;
+}
+.container form .pass-link a:hover,.content .last a:hover {
+    text-decoration: underline;
+}
+
+.container form .field input[type="submit"] {
+    background-color: blue;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+.container form .field input[type="submit"]:active {
+    transform: scale(0.95);
+}
+
+.content .last {
+    text-align: center;
+    margin-top: 10px;
+}
