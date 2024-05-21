@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(254, 59, 91);
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items:center;
+}
+
+.container {
+    background-color: #fff;
+    width: 320px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+    padding: 0px 25px;
+}
+
+.head {
+    line-height: 60px;
+    font-size: 25px;
+    font-weight: 550;
+}
+
+.inputs {
+    /* background-color: red; */
+    width: 100%;
+    height: 40px;
+    margin: 10px 0;
+    position: relative;
+}
+
+.inputs input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+}
+
+.inputs input[type="text"],
+.inputs input[type="password"] {
+    border-bottom: 2px solid lightgrey;
+}
+
+.inputs label{
+    position: absolute;
+    left: 0;
+    top: 50% ;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+}
+
+.inputs input:focus ~ label,
+.inputs input:valid ~ label{
+    opacity: 0;
+}
+
+.content {
+    width: 100%;
+    /* line-height:25px; */
+    text-align: center;
+}
+
+.inputs input[type="button"] {
+    /* background-color: red; */
+    border-radius: 5px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+.inputs input[type="button"]:active {
+    transform: scale(0.95);
+}
+
+.container form .btn {
+    margin: 20px 0;
+}
+
+#Twitter {
+    background-color: rgb(29, 161, 242);
+    text-align: left;
+    padding-left: 25px;
+}
+
+#facebook {
+    background-color: rgb(49, 27, 146);
+    text-align: left;
+    padding-left: 25px;
+}
+
+#continue {
+    background-color: red;
+}
+
+span {
+    border-bottom: 4px solid red;
+}
