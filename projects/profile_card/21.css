@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background:linear-gradient(375deg, #1cc7d0, #2ede98) ;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.wrapper {
+    height:500px ;
+    width: 400px;
+    background-color: #fff;
+    position: relative;
+    /* transform-style: preserve-3d; */
+    /* padding: 5px; */
+}
+
+.wrapper .card {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+    transform: rotateY(0deg);
+}
+
+.wrapper .card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+
+}
+
+.wrapper .back-face img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    padding: 5px;
+    background:linear-gradient(375deg, #1cc7d0, #2ede98)  ;
+}
+
+.wrapper .back-face {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /* transform: rotateY(180deg); */
+}
+
+.wrapper .back-face .info {
+    text-align: center;
+}
+
+.info .title {
+    font-size: 30px;
+    font-weight: 550;
+}
+
+.back-face ul {
+    display: flex;
+}
+
+.back-face ul a {
+    display: block ;
+    height: 40px;
+    width: 40px;
+    background:linear-gradient(375deg, #1cc7d0, #2ede98) ;
+    text-align: center;
+    margin: 0 5px;
+    border: 2px solid transparent;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #fff;
+}
+
+.back-face ul a:hover {
+    background: none;
+    color: #1cc7d0;
+    border-color: #1cc7d0;
+}
