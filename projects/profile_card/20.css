@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: aqua;
+}
+
+.container {
+    width: 420px;
+    height: 520px;
+    position: absolute;
+    left: 52%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.container .content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.container .content .img-box {
+    position: absolute;
+    width: 100%;
+    height: 450px;
+    padding: 10px;
+    border-radius: 25px;
+    background-color: #fff;
+    left: 0;
+    bottom: 130px;
+    transition: all 0.3s ease;
+}
+
+.content .img-box::before {
+    position: absolute;
+    content: '';
+    height: 30px;
+    width: 30px;
+    background-color: #fff;
+    left: 50%;
+    bottom: -12px;
+    transform: translateX(-50%) rotate(45deg);
+    z-index: -1;
+}
+
+.img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.container .content .box {
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.container .content .box .share, .cancel{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    line-height: 50px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #2980b9;
+    background-color: #fff;
+    letter-spacing: 1px;
+    border-radius:25px ;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.container .content .box .share {
+    opacity: 1;
+}
+
+
+#check {
+    display: none;
+}
+
+#check:checked ~ .box .share {
+    opacity: 0;
+}
+
+#check:checked ~ .box .cancel {
+    opacity: 1;
+}
+
+#check:checked ~ .img-box{
+    bottom: 80px;
+}
+
+
+.img-box .about {
+    position: absolute;
+    background: rgba(0,0,0,0.35);
+    left:0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+#check:checked ~ .img-box .about {
+    opacity: 1;
+}
+
+.about .details {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 35px;
+
+}
+
+.details .name,
+.details .job{
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.details .name {
+    font-size: 22px;
+}
+
+.details .icons i {
+    font-size: 20px;
+    color: #fff;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    line-height: 43px;
+    margin: 14px 5px;
+    transition: all 0.3s ease;
+}
+.details .icons i:hover {
+    background-color: #fff;
+    color: #2980b9;
+}
