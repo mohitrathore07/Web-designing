@@ -200,3 +200,154 @@ body {
     top: 20%;
     object-fit: cover;
 }
+
+.third-part {
+    height: 500px;
+    width: 100vw;
+    background-color: #000;
+    border-bottom: 11px solid grey;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.third-part h1{
+    color: #fff;
+    font-size: 48px;
+    font-weight: 900;
+}
+.third-part .text{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.fourth-part {
+    height: 500px;
+    width: 100vw;
+    background-color: #000;
+    border-bottom: 11px solid grey;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.fourth-part .left-side {
+    color: #fff;
+}
+
+.fourth-part h1{
+    color: #fff;
+    font-size: 48px;
+    font-weight: 900;
+}
+.fourth-part .text{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.fourth-part .right-side {
+    position: relative;
+    width: 550;
+}
+
+.fourth-part .right-side video {
+    position: absolute;
+    left: 18%;
+    top: 9%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+.fourth-part .right-side image {
+    z-index: 10;
+}
+
+.fifth-part {
+    height: 500px;
+    width: 100vw;
+    background-color: #000;
+    border-bottom: 11px solid grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.fifth-part .left-side {
+    color: #fff;
+}
+
+.fifth-part h1{
+    color: #fff;
+    font-size: 48px;
+    font-weight: 900;
+}
+.fifth-part .text{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.sixth {
+    background-color: black;
+    text-align: center;
+    padding: 25px;
+    border-bottom: 11px solid grey;
+}
+
+.sixth .inputs {
+    width: 100%;
+}
+.sixth .inputs input[type="text"] {
+    width: 80%;
+    height: 100px;
+    background-color: transparent;
+    border: 1px solid grey;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.sixth h1 {
+    color: #fff;
+}
+
+.last {
+    background-color: black;
+    padding: 5% 10%;
+}
+
+.last .heading , .last .heading a {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.last .links {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 20px 15px;
+    margin-top: 20px;
+}
+
+.last .links a {
+    color: #fff;
+}
+
+.last .btn button {
+    margin-top: 20px;
+  padding: 10px 35px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.last-txt {
+    color: #fff;
+    margin-top: 20px;
+}
