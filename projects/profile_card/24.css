@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+.front-part {
+    width: 100vw;
+    height: 720px;
+    background: url(./images/bg.jpg);
+    background-size: center no-repeat;
+    background-position: center center;
+    border-bottom: 11px solid grey;
+    position: relative;
+}
+
+body {
+    /* background-color: rgb(204, 13, 13); */
+    width: 100vw;
+}
+.box {
+    height: 720px;
+    width: 100vw;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    background-color: black;
+}
+
+.front-part .nav {
+    display: flex;
+    height: 100px;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.front-part .nav .logo {
+    z-index: 10;
+}
+
+.front-part .nav .logo img {
+    width: 153px;
+    z-index: 10;
+}
+
+.front-part .nav .langage-select{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    z-index: 10;
+
+}
+.front-part .nav .langage-select .btn button {
+    background: red;
+    border: none;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 550;
+    color: #fff;
+    padding: 8px 12px;
+    z-index: 10;
+
+}
+.front-part .nav .langage-select #language {
+    background: transparent;
+    border: 1px solid #fff;
+    font-size: 15px;
+    font-weight: 550;
+    color: #fff;
+    padding: 5px 25px;
+}
+.front-part .nav .langage-select #language option {
+    color: white;
+    background-color: black;
+}
+
+.mid-part {
+    z-index: 10;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100% ;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.mid-part h1 {
+    
+    color: rgb(255, 255, 255);
+    font-size: 48px;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+.mid-part .mid {
+    color:#fff;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.mid-part .end {
+    color:#fff;
+    font-size:24px;     
+    font-weight: 400;
+
+}
+
+.inp {
+    display: inline-block;
+    position: relative;
+}
+
+.inp label {
+    position: absolute;
+    left: 20px;
+    top: 30%;
+    color: #fff;
+    font-size: 16px;
+    transition:all 0.3s ease ;
+}
+
+.inp input {
+    width: 370px;
+    height: 50px;
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 16px;
+}
+
+.btns #btnone {
+    margin-left: 10px;
+    width: 190px;
+    height: 50px;
+    background: red;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.btns .inp input:focus ~ label {
+    top: 0%;
+    scale: 0.85;
+    left: 15px;
+}
+
+.btns #btnone:hover {
+    background: rgb(164, 0, 0);
+}
+
+.second-part {
+    height: 500px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 11px solid grey;
+}
+
+.second-part .left-side {
+    color: white;
+}
+
+.second-part .left-side h2 {
+    color: white;
+    font-size:48px ;
+    font-weight: 900;
+}
+.second-part .left-side .text {
+    color: white;
+    font-size:24px ;
+    font-weight: 400;
+    margin-top: 15px;
+}
+
+
+.second-part .right-side {
+    position: relative;
+    width: 350px;
+}
+
+
+.second-part .right-side video {
+    position: absolute;
+    left: 13%;
+    top: 20%;
+    object-fit: cover;
+}
