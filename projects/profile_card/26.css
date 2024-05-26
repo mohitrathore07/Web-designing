@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ecf0f3;
+}
+
+header {
+    width: 100%;
+    padding: 12px 0;
+    background: #ecf0f3;
+    box-shadow: -3px -3px 7px #ffffff,
+                3px 3px 5px #ceced1;
+}
+
+header nav {
+    max-width: 1270px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    font-size: 28px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #31344b;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul a {
+    margin: 0 8px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight:400;
+    padding: 10px 12px;
+    display: inline-flex;
+    color: #31344b;
+    box-shadow: -3px -3px 7px #ffffff,
+                3px 3px 5px #ceced1;
+    position: relative;
+    transition: all 0.3s ease ;
+}
+
+nav ul a:hover::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    box-shadow:inset -3px -3px 7px #ffffff,
+                inset 3px 3px 5px #ceced1;
+}
+
+nav ul a:hover {
+    color:  #3498db;
+}   
+
+nav label.button {
+    color: #31344b;
+    font-size: 18px;
+    cursor: pointer;
+    display: none;
+}
+nav label.cancel {
+    position: absolute;
+    top: 25px;
+    right: 30px;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width:940px) {
+    nav ul {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        max-width: 400px;
+        padding-top: 45px;
+        height: 100%;
+        background: #ecf0f3;
+        box-sizing: 0 5px 10px #b0b0b5;
+        z-index: 12;
+        transition: all 0.3s ease;
+    }    
+
+    nav ul a {
+        display: block;
+        font-size: 23px;
+        width: 100%;
+        margin-top: 30px;
+        box-shadow:none ;
+        text-align: center;
+    }
+
+    nav ul a:hover::before {
+        box-shadow: none;
+    }
+
+    nav label.bars {
+        display: block;
+    }
+
+    #check:checked ~ label.bars {
+        display: none;
+    }
+
+    #check:checked ~ ul label.cancel {
+        display: block;
+    }
+
+    #check:checked ~  ul {
+        left: 0;
+    }
+}
