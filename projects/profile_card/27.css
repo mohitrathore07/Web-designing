@@ -1,0 +1,109 @@
+* {
+    color: black;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-content:end start;
+}
+
+footer {
+    width: 100vw;
+    height: 300px;
+    background-color:rgba(0, 36, 167, 0) ;
+    border-bottom: 1px solid black;
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px; 
+    border-bottom: 1px solid #1b1010;
+    
+}
+
+footer .heading .logo {
+    color: #000000;
+    font-size: 27px;
+    font-weight: 550;
+}
+
+footer .heading .icons i {
+    font-size: 20px;
+    padding: 7px;
+    border-radius: 50%;
+    margin: 0px 3px;
+    transition: all 0.3s ease;
+    color: black;
+
+}
+
+.bxl-facebook {
+    background-color: #4267B2;
+}
+
+.bxl-twitter {
+    background-color: #1DA1F2;
+} 
+
+.bxl-linkedin{
+    background-color: #0a66c2;
+}
+
+.bxl-instagram {
+    background-color: #E1306C;
+}
+
+.bxl-youtube {
+    background-color: #FF0000;
+} 
+
+footer .heading .icons i:hover {
+    background-color: #fff;
+    color: black;
+}
+
+footer .links {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    margin: 30px 25px;
+}
+
+footer .links .one {
+    display: flex;
+    flex-direction:column ;
+    gap: 5px;
+    transition: all 0.3s ease;
+    color: black;
+    font-weight:400 ;
+}
+
+footer .links .one a {
+    transition: all 0.3s ease;
+    color: black;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+footer .links .five .btn {
+    width: 250px;
+    height: 35px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+footer .links .five input[type="text"] {
+    padding-left: 15px;
+    background-color: transparent;
+    transition: all 0.3s ease;
+    color: black;
+    outline: none;
+    border: 1px solid #000000;
+    font-size: 17px;
+}
